@@ -1,0 +1,98 @@
+body {
+margin:0;
+font-family: Arial;
+background:black;
+color:white;
+overflow:hidden;
+}
+
+.page {
+display:none;
+height:100vh;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.show { display:flex; }
+
+/* 🎂 CAKE */
+.cake {
+width:200px;
+height:200px;
+background:pink;
+border-radius:20px;
+}
+
+#flame {
+font-size:30px;
+animation:flicker .4s infinite;
+}
+
+@keyframes flicker {
+50%{opacity:.4;}
+}
+
+/* ⚽ IMAGE */
+#slide {
+width:300px;
+border-radius:10px;
+}
+
+/* 🐐 FLYER */
+.big-img {
+width:80%;
+border-radius:15px;
+}
+
+/* 📝 MESSAGE CARD */
+.message-card {
+background:white;
+color:black;
+width:85%;
+max-height:65vh;
+overflow-y:auto;
+padding:20px;
+border-radius:15px;
+}
+
+.title {
+color:#1e90ff;
+font-weight:900;
+text-shadow:0 0 10px rgba(30,144,255,0.5);
+}
+
+.message-text {
+font-family:"Arial Black";
+font-size:14px;
+line-height:1.8;
+}
+
+/* FADE */
+.reveal {
+animation:fadeIn 1s forwards;
+opacity:0;
+transform:translateY(20px);
+}
+
+@keyframes fadeIn {
+to{opacity:1; transform:translateY(0);}
+}
+
+/* 🐐 FINAL */
+.final {
+font-size:28px;
+animation:zoom 2s infinite alternate;
+}
+
+@keyframes zoom {
+from{transform:scale(1);}
+to{transform:scale(1.2);}
+}
+
+/* 🎆 FIREWORKS */
+canvas {
+position:fixed;
+top:0;
+left:0;
+}
